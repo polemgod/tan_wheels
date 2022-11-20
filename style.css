@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
 }
 h1 {
   font-size: 20px;
@@ -17,6 +18,10 @@ h2 {
 
 a {
   text-decoration: none;
+}
+
+.swiper {
+  width: 100%;
 }
 
 .pembungkus-pencarian > input {
@@ -89,6 +94,9 @@ li {
   text-align: center;
   padding-bottom: 20px;
   font-size: 30px;
+}
+#velg-mobil {
+  padding-bottom: 60px;
 }
 
 .pembungkus-velg {

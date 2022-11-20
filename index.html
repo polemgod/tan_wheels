@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,10 +17,10 @@
         <h1>Tan_wheels</h1>
         <nav>
           <ul>
-            <li><a href="#"> Home </a></li>
-            <li><a href="#"> Velg Mobil </a></li>
-            <li><a href="#"> Ban Mobil </a></li>
-            <li><a href="#"> Sparepart </a></li>
+            <li><a href="./index.html"> Home </a></li>
+            <li><a href="#velg-mobil"> Velg Mobil </a></li>
+            <li><a href="#ban-mobil"> Ban Mobil </a></li>
+            <li><a href="#sparepart"> Sparepart </a></li>
           </ul>
         </nav>
         <div class="pembungkus-pencarian">
@@ -47,30 +51,33 @@
       </div>
     </section>
 
-    <section id="velg-mobil">
+    <section class="swiper mySwiper" id="velg-mobil">
       <h2>VELG MOBIL</h2>
-      <div class="pembungkus-velg">
-        <div class="velg-item">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide velg-item">
           <h2>velg advan ring 17</h2>
           <img src="./foto/Advan.jpg" alt="" />
           <h3>Rp 3.500.000</h3>
         </div>
-        <div class="velg-item">
+        <div class="swiper-slide velg-item">
           <h2>velg OEM avanza ring 14</h2>
           <img src="./foto/ENKEI-avanza.jpg" alt="" />
           <h3>Rp 2.500.000</h3>
         </div>
-        <div class="velg-item">
+        <div class="swiper-slide velg-item">
           <h2>velg O.Z Rally ring 15</h2>
           <img src="./foto/OZ-rally.jpg" alt="" />
           <h3>Rp 3.500.000</h3>
         </div>
-        <div class="velg-item">
+        <div class="swiper-slide velg-item">
           <h2>velg OEM Mobilio ring 14</h2>
           <img src="./foto/ENKEI-mobilio.jpg" alt="" />
           <h3>Rp 2.500.000</h3>
         </div>
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </section>
 
     <section id="ban-mobil">
@@ -158,8 +165,8 @@
         <p>Copyright 2022 Tan_wheels</p>
         <div class="about">
           <ul>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Kontak</a></li>
+            <li><a href="./about.html">About us</a></li>
+            <li><a href="./kontak.html">Kontak</a></li>
             <li><a href="#">Term & Condition</a></li>
             <li><a href="#">FAQs</a></li>
             <li><a href="#">Layanan pengaduan</a></li>
@@ -167,5 +174,27 @@
         </div>
       </div>
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 50,
+        slidesPerGroup: 2,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
