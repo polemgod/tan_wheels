@@ -279,6 +279,7 @@ li {
 .social {
   display: flex;
   flex-direction: row;
+  gap: 10px;
 }
 
 .social > h2 {
@@ -327,7 +328,6 @@ li {
   position: fixed;
   bottom: 6%;
   right: 2%;
-  z-index: 1000;
   width: 60px;
   height: 60px;
 }
@@ -335,4 +335,78 @@ li {
 .float > img {
   width: 50px;
   height: 50px;
+}
+.bc {
+  display: flex;
+  gap: 10px;
+}
+.logo-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.descripsi {
+  padding: 40px 50px;
+}
+.arrow {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-left: 20px;
+  padding-bottom: 60px;
+}
+.pembungkus-kontak-kami {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
+#kontak {
+  padding-bottom: 20px;
+}
+.isi-alamat {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.isi-email {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.isi-sosmed {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.con-term {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+.trm {
+  padding-bottom: 20px;
+  width: 100%;
+}
+.penghentian-layanan {
+  padding-bottom: 20px;
+}
+.perubahan {
+  padding-bottom: 20px;
+}
+.keep-barang {
+  padding-bottom: 20px;
+}
+.klaim-barang {
+  padding-bottom: 20px;
+}
+.klaim-transaksi {
+  padding-bottom: 20px;
+}
+.pengiriman-barang {
+  padding-bottom: 20px;
 }
